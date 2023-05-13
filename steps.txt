@@ -47,3 +47,15 @@ Add react-router-dom package
 step 5:
 Add redux neccessary packages
 npm install react-redux redux redux-thunk
+
+step 6:
+install react-query
+
+step 7:
+Add routes
+
+step 8:
+create redux files for contact management
+
+step 9:
+create contact pages 

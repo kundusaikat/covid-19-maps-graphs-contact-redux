@@ -1,11 +1,11 @@
-import React from 'react';
+import { AllRoutes } from './AllRoutes/AllRoutes';
 
 
 function App() {
   return (
-    <div className="text-red-500">
-      Hi There
-    </div>
+    <>
+      <AllRoutes />
+    </>
   );
 }
 
