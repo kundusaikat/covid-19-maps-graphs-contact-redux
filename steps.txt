@@ -1,0 +1,49 @@
+step 1: 
+create react app with typescript support
+npx create-react-app my-app --template typescript
+If support not present add support
+npm install --save typescript @types/node @types/react @types/react-dom @types/jest
+
+step 2:
+create `tsconfig.json` and write
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
+  },
+  "include": ["src"]
+}
+
+step 3:
+Add tailwind library support to the project
+npm install tailwindcss autoprefixer postcss-cli
+npx tailwindcss init // to crate tailwind.config.js
+create postcss.config.js
+module.exports = {
+  plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
+  ],
+};
+add lines to src/styles/tailwind.css add import in index.tsx
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+step 4:
+Add react-router-dom package
+
+step 5:
+Add redux neccessary packages
+npm install react-redux redux redux-thunk
