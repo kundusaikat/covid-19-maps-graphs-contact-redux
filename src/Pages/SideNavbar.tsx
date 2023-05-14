@@ -9,7 +9,7 @@ const SideNavbar = () => {
           <p className="underline text-[#4343F7] text-center my-2">Contact</p>
         </Link>
         <div className="bg-black h-1"></div>
-        <Link to="/charts"><p className="underline text-[#4343F7]  text-center my-2">Charts and Maps</p></Link>
+        <Link to="/chart"><p className="underline text-[#4343F7]  text-center my-2">Charts and Maps</p></Link>
         <div className="bg-black h-1"></div>
         <p className="text-center my-2">Sidebar</p>
       </div>

@@ -14,7 +14,7 @@ const Header: React.FC = () => {
         setTitle("Contact Page");
 
         break;
-      case "charts":
+      case "chart":
         setTitle("Charts and Maps");
 
         break;
