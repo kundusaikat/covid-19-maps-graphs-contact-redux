@@ -36,20 +36,31 @@ const Graphs: React.FC<GraphProps> = ({ data }) => {
       {
         label: "Active",
         data: Object.values(data.cases),
+        fill:false,
         borderColor: "rgb(255, 99, 132)",
         backgroundColor: "rgba(255, 99, 132, 0.5)",
+        borderWidth: 0.5,
+        tension:1,
+        showLine:true
       },
       {
         label: "Deaths",
         data: Object.values(data.deaths),
+        fill:false,
         borderColor: "rgb(53, 162, 235)",
         backgroundColor: "rgba(53, 162, 235, 0.5)",
+        borderWidth: 0.5,
+        tension:0.1
+
       },
       {
         label: "Recovered",
         data: Object.values(data.recovered),
+        fill:false,
         borderColor: "rgb(0, 255, 255)",
         backgroundColor: "rgba(0, 255, 255, 0.5)",
+        borderWidth: 0.5,
+        tension:0.1
       },
     ],
   };
@@ -70,7 +81,7 @@ const Graphs: React.FC<GraphProps> = ({ data }) => {
 
   return (
     <div className="w-full max-w-[500px]">
-      <Line data={chartData} options={options} />
+      <Line data={chartData} options={options} itemType="line"/>
     </div>
   );
 };

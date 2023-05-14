@@ -2,8 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { deleteContactItem } from "../../Redux/Contact/contact.action";
-
-import crossIcon from "../../assets/svg/crossIcon.svg";
+import crossIcon from "../../assets/svg/crossIcon.svg"
 
 function ShowContact() {
   const dispatch = useDispatch();
