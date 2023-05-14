@@ -43,7 +43,6 @@ https://disease.sh/v3/covid-19/historical/all?lastdays=all
 
 
 ## Features ✨
-`
 - Dynamic Topbar and Side Navigation bar.
 - Create/Read/Update/Delete Contact using redux.
 - Dashboard of Charts and Maps using simple maps and chartJS.

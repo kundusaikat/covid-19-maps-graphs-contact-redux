@@ -107,7 +107,7 @@ const CreateContact = () => {
         </div>
         <div
           onClick={handleSubmit}
-          className=" bg-[#CCCCCC] border-2 border-black  p-2 inline-block my-10 "
+          className=" bg-[#CCCCCC] border-2 border-black  p-2 inline-block my-10 cursor-pointer"
         >
           <p>Save Contact</p>
         </div>

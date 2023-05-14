@@ -42,7 +42,7 @@ const CountryMaps: React.FC = () => {
   return (
     <>
       <div className="no-scrollbar overflow-hidden w-full h-[calc(90svh-10px)]">
-        <ComposableMap projection="geoMercator" style={{width:"100%",height:640}} >
+        <ComposableMap projection="geoMercator" style={{width:"100%",height:"90vh"}} >
           <ZoomableGroup center={[0, 0]} zoom={1} >
             <Geographies geography={map}>
               {({ geographies }) =>
@@ -56,7 +56,7 @@ const CountryMaps: React.FC = () => {
                       geography={geo}
                       fill={
                         selectedCountry === geo.properties["Alpha-2"]
-                          ? "#FF5722"
+                          ? "#FF0000"
                           : item
                           ? "#AAA"
                           : "#DDD"

@@ -110,7 +110,7 @@ const EditContact = () => {
           </tbody>
         </table>
       </div>
-      <div onClick={handleSubmit} className=" bg-[#CCCCCC] border-2 border-black  p-2 inline-block my-10 ">
+      <div onClick={handleSubmit} className=" bg-[#CCCCCC] border-2 border-black  p-2 inline-block my-10 cursor-pointer">
         <p>Save Editted Contact</p>
       </div>
       
