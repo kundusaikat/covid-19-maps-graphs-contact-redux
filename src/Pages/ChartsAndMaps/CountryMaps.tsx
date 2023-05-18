@@ -31,6 +31,7 @@ const CountryMaps: React.FC = () => {
   }
 
   const handleClick = (geo: any) => {
+    console.log(geo)
     const countryName = geo.properties["Alpha-2"];
     setIsOpen(true);
     setPopupData(data?.find((el: any) => el.countryInfo.iso2 === countryName));
@@ -50,15 +51,27 @@ const CountryMaps: React.FC = () => {
                   const item = data?.find(
                     (d: any) => d.countryInfo.iso2 === geo.properties["Alpha-2"]
                   );
+                  
                   return (
                     <Geography
                       key={geo.rsmKey}
                       geography={geo}
                       fill={
                         selectedCountry === geo.properties["Alpha-2"]
-                          ? "#FF0000"
-                          : item
-                          ? "#AAA"
+                          ? "#111"
+                          : (item?.active<100)
+                          ? "#F08080"
+                          : (item?.active>1000000)
+                          ? "#FF0800"
+                          : (item?.active>100000)
+                          ? "#D9381E"
+                          : (item?.active>50000)
+                          ? "#FFA07A"
+                          : (item?.active>1000)
+                          ? "#FA8072"
+                          : (item?.active>100)
+                          ? "#E9967A"
+                          
                           : "#DDD"
                       }
                       stroke="#FFF"
